@@ -4,11 +4,13 @@
   <head>
     <meta charset="UTF=8">
     <title>画像分類</title>
+    <link rel="stylesheet" href="/static/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style media="screen">
       .content {
         width: 100%;
         text-align: center;
+        overflow-x: auto;  /* これにより、必要に応じて水平方向にスクロールが表示されます */
       }
       .content h1 {
         width: 100%;
@@ -19,6 +21,10 @@
       }
       .content p {
         font-size: 20px;
+      }
+      .content img {  /* 画像の最大幅を設定します */
+        max-width: 100%;
+        height: auto;
       }
     </style>
   </head>
